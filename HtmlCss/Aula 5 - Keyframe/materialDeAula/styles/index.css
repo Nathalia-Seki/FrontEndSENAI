@@ -1,0 +1,83 @@
+
+/* keyframes = define uma animação */
+/* keyframe = identifier = se refere ao nome da animação */
+/* e as etapas são definidas pelas porcentagens (%) colocadas no bloco, ou seja, */
+/* entre uma abre chave e fecha chave. */
+@keyframes mudaCor {
+    0%{
+     color: black;
+    }  
+    25%{
+        color: cadetblue;
+    }
+    50%{
+        color: blueviolet;
+    }
+    75%{
+        color: chartreuse;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@keyframes pertubacao {
+    0%{
+        top: 0%; 
+        /* top = topo da página */
+        /* right: 0%; */
+        /* para a direita */
+        background-image: url(/images/bicicleta.jpg);
+        /* background-image = possível colocar imagens, mas sempre incluir url */
+        /* para buscar a imagem digita "/" ou "../", quando coloca os pontos colta uma pasta, */
+        /* a quantiade pontos é a quantidades de pastas a voltar. */
+        background-size: cover;
+    }    
+    25%{
+        top: 10%;
+        /* right: 100%; */
+        background-image: url(/images/flor\ branca.jpg);
+        background-size: cover;
+    }
+    50%{
+        top: 0%;
+        /* right: 0%; */
+        background-image: url(/images/laranjas.jpg);
+        background-size: cover;
+    }
+}
+
+h1{
+    animation-name: mudaCor;
+    /* duration = é o tempo de duração da animação */
+    animation-duration: 1s;
+    /* delay - o tempo para dar início a animação, ou seja, para não iniciar assim que abre a janela*/
+    animation-delay: 1s;
+    /* interetion-count = esse faz com que repita a animação quantas vezes deseja */
+    /* não somente uma vez e para. Também pode ser infinito com "infnite" */
+    animation-iteration-count: 3;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    /* position absolute = essa configuração permite mandar ele para qualquer loca */
+    /* desobedece hierarquia e consegue mandar coordenadas */
+    position: absolute;
+    /* Para deixar mais sucinto e menos linhas de código, então também é possível */
+    /* dar esses três comandos em uma única linha usando a seguinte sintaxe: */
+    /* animation: nome (name) duração (duratino) tempo (time) deley */
+    /* animation-name: pertubacao; 
+    animation-iteration-count: infinite;
+    animation-duration: 5s;*/
+    animation: pertubacao 5s infinite;
+    background-color: blue;
+}
+
