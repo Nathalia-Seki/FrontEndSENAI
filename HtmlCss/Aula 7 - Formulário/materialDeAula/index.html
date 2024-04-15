@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="topico">
+        <h3>FORMULÁRIO</h3>
+        <!-- form = diz que um formulário começou -->
+        <!-- action - manda o usuário para outra página com os dados preenchidos -->
+        <!-- form action "#" method="get" = nesse tipo de formulário, pode acabar vazando algum formulário. 
+            Usado mais para viés de teste. É possível ver as informações do usuário no link de endereço.
+            Manda as informações no url e manda para o servidor.
+            
+            form action "#" method="get post" = Vai ser comunicado direto para o servidor. Lançar de forma oficial,
+            pois nenhuma informação iá vazar. 
+         -->
+        <form action="#" method="post">
+            <div class="espaco">
+                <!-- label  é um auxiliador do input text e auxilia o usuário no preencimento, identificando as caixinhas de preenchimento -->
+                <label for="nomeDoUsuario">Nome do usuário</label>
+                <!-- input tipo text = recebe um texto ou conjunto de caracteres-->
+                <input required type="text" id="nomeDoUsuario">
+                <!-- o comando "rquired" quer dizer que é obrigatório, então somente vai enviar os dados se preencher 
+                além disso, também quando o cursor estiver em cima da caixa irá aparecer a mensagem "preencha esse campo"-->
+            </div>
+
+            <div class="espaco">
+                <label for="senhaDoUsuario">Insira a sua senha</label>
+                <!-- input type password = será para ocultar uma informação, assim não vazar dados -->
+                <input required maxlength="8" type="password" id="senhaDoUsuario">
+                <!-- maxlength = comando usado para limitar a quantidade de caractere que poderá inserir e não deixar inserir mais -->
+                <!-- disabled = desativa input, ou seja, comando para desativar um campo. Ex: campo de endereço se já tem um cadastrado e deseja usar o mesmo, então habiita e os campos se tornam desabiliados -->
+            </div>
+
+            <div class="espaco">
+                <label for="emailDoUsaro">Insira o seu e-mail</label>
+                <input required placeholder="usuaro@email.com" type="email" id="emailDoUsaro">
+            <!-- placeholder = é um texto fantasma, auxílio para o usuário de como ele faria -->
+            </div>
+
+            <div class="espaco">
+                <label for="idadeDoUsuario">Insira a sua idade</label>
+                <!-- min e max - consegue aqui limitar com esses comandos para que o usuário não coloque uma idade inválida. E também aparece a informação para o usuário que está inválido -->
+                <input min="0"step="1" max="200" type="number" id="idadeDoUsuario">
+            <!-- step = comando para fazer contagem, muito usado para contagem, consegue mostrar casas decimais, daria para colocar 0,01. 
+            No exemplo acima contar de 2 em 2. -->
+            </div>
+
+            <div class="espaco">
+                <label for="aceitaNotificar">Aceita rebecer notificações no e-mail?</label>
+                <input type="checkbox" id="aceitaNotificar">
+            </div>
+
+            <div class="espaco">
+                <label for="nascimentoDoUsuario">Insira a data de nascimento</label>
+                <input type="date" id="nascimentoDoUsuario">
+            </div>
+
+            <div class="espaco">
+                <label for="">Qual estado você mora?</label>
+                <!-- select = ele abre uma caixa de seleção, para que funcione de forma adequada é possívelcoloca as opções com o "option" -->
+                <!-- value = expressa um valor para poder submeter -->
+                <select id="estadoDoUsuário">
+                    <option value=""> - </option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select>
+                
+            </div>
+
+            <div class="espaco">
+                <label for="telefoneUsuario">Insira o seu telefone</label>
+                <input type="tel" id="telefoneUsuario">
+            </div>
+
+            <div class="espaco">
+                <!-- textarea = usado para pedir um texto para o usuário, então o usuário pode colocar o que quiser. Ex: feedback, etc. -->
+                <!-- cols = quantidade de colunas (número de caracteres) e row = quantidade de linhas -->
+                <textarea id="feedback" cols="30" rows="10">Digite um feedback muito bacana</textarea>
+            </div>
+
+            <div class="espaco">
+                <h3>Nível de escolaridade</h3>
+                <label for="ensinoBasico">Ensino Básico</label>
+                <!-- "input type = radio" - é para usar um multiplo escolha 
+                o "name", será utilizado nesse caso para não deixar marcar todas as escolhas
+                assim identifica que eles fazem parte da mesma função, assim permite marcar apenas um -->
+
+                <input type="radio" id="ensinoBasico" name="ensino">
+                <!-- hr = linha de separação na horizontal, para separar as ideias e não ficar confuso -->
+                <hr>
+                <label for="ensinoMedio">Ensino Médio</label>
+                <input type="radio" id="ensinoMedio" name="ensino">
+                <hr>
+                <label for="ensinoSuperior">Ensino Superior</label>
+                <input type="radio" id="ensinoSuperior" name="ensino">
+            </div>
+
+            <div class="espaco">
+                <h3>Outros Inputs</h3>
+                <!-- color = para usuário usado para colocar uma cor. Ex: definir cor padrão do usuário -->
+                <input type="color" id=""> 
+                <hr>
+                <!-- file = para anexar um arquivo-->
+                <input type="file" id="">       
+                <hr>
+                <!-- datetime-local = determina a data e a hora -->
+                <input type="datetime-local" id=""> 
+                <hr>
+                <!-- um botão, mas não tem função específica -->
+                <input type="button" value="Botao">   
+            </div>
+
+            <div class="espaco">
+                <!-- existem 2 maneiras de envar as informações, quando terminar e preencher as informações -->
+                <!-- maneira 1 -->
+                <!-- <input type="submit" value="Cadastrar"> -->
+                <!-- maneira 2 -->
+                <button type="submit">Cadastrar</button>
+                <button type="reset"> Resetar Formulário</button>
+                <!-- button type="reset = usado para limpar todos os campos, como diz o nome é resetar" -->
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

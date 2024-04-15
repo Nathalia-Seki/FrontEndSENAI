@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Formulário</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="topico">
+        <h3>CURRÍCULO</h3>
+
+        <form action="#">
+            <div class="espaco">
+                <label for="nomeCompleto">Nome Completo: </label>
+                <input required type="text" id="nomeCompleto">
+            </div>
+
+            <div class="espaco">
+                <label for="dataNascimento">Data de Nascimnto: </label>
+                <input required type="date" id="dataNascimento">
+            </div>
+
+            <div class="espaco">
+                <label for="idade">Idade: </label>
+                <input required min="0" max="100" type="number" id="idade">
+            </div>
+
+            <div class="espaco">
+                <label for="email">E-mail: </label>
+                <input required type="email" id="email">              
+            </div>
+
+            <div class="espaco">
+                <label for="endereco">Endereço: </label>
+                <input required type="endereco">
+                <label for="cidade">Cidade: </label>
+                <select id="cidade">
+                    <option value=""> - </option>
+                    <option value="aguasClaras">Águas Claras</option>
+                    <option value="guara1">Guará 1</option>
+                    <option value="guara2">Guará 2</option>
+                    <option value="ceilandia">Ceilândia</option>
+                    <option value="riachoFundo1">Riacho Fundo 1</option>
+                    <option value="riachoFundo2">Riacho Fundo 2</option>   
+                </select>
+                <label for="cep">CEP: </label>
+                <input required placeholder = " 00.000-000" maxlength="9" type="text" id="cep">
+                <label for="uf">UF: </label>
+                <select id="uf">
+                    <option value=""> - </option>
+                    <option value="DF">DF</option>
+                    <option value="GO">GO</option>
+                    <option value="TO">TO</option>
+                    <option value="MG">MG</option>
+                    <option value="SP">SP</option>
+                </select>
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+
+    
+</body>
+</html>
