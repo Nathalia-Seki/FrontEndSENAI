@@ -54,6 +54,15 @@ main{
     margin: 20px 0px;
 }
 
+.topico{
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 200px 200px 200px 200px rgb(175, 175, 175);
+}
+
 footer{
     width: 100%;
     height: 50px;
