@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+table{
+    /* border = fará uma borda externa, mas não no interior */
+    /* border: 1px solid black; */
+    /* border-collapse: é quando deixa as bordas colapsarem, encostarem */
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th{
+    color: white;
+    background-color: rgb(46, 46, 46);
+}
+
+td{
+    background-color: azure;
+    transition: 2s;
+}
+
+/* pseudo classe é uma seleção do css, mas adiciona um aspecto específico, ou seja, a interação do usuário  */
+th:hover{
+    /* hover =  é realizar uma ação de aconrdo com a interação de quando o usuário passar o mouse por cim */
+    background-color: rgb(22, 141, 22);
+}
+
+td:active{
+    /* active = é a partir de uma ação do usuário, então aconece algo, 
+    no caso do exemplo: ao clicar muda a cor da borda */
+    border: 3px solid green;
+    /* transition = é o tempo de transição, o tempo que leva para desaparecer  */
+    transition: 0.2s;
+}
+
+thead{
+    /* position: sticky - é para fazer com que algo fique fixo, no caso do exemplo é o título, */
+    /* mas precisa dizer quando ele vai fazer, por isso tem que incluir o "top". Não é fixo pra sempre, ou seja, */
+    /* passou a tabela  e para de ficar fixo*/
+    
+    position: sticky;
+    top: -1px;
+}
+
+/* para poder deixar o th vazio transparente e sem borda */
+th:empty{
+    background-color: transparent;
+    border: none;
+}
+
+#abreScroll{
+    width: 1px;
+    height: 2000px;
+}
+
+@keyframes efeito{
+    0%{
+        border: 1px solid black;
+    }
+    25%{
+        border: 1px solid rgb(206, 2, 2);
+    }
+    50%{
+        border: 1px solid rgb(240, 77, 77);
+    }
+    75%{
+        border: 1px solid rgb(206, 2, 2);
+    }
+    10%{
+        border: 1px solid black;
+    }
+}
+
+/* esse efeito que esta comentado é um efeito de deixar em degradê a caixinha, seguindo o efeito acima
+para funcionar */
+/* input{
+    border: none;
+    animation: efeito 2s infinite;
+}  */
+
+/* esse é o efeito para que a borda só inicie a animação quando o usuário clicar no campo */
+input{
+    border: none;
+    border: 1px solid black;
+}
+
+/* esse precisa tirar a acessibilidade com o outline e precisa tirar a borda também do border */
+
+input:focus{
+    border: none;
+    outline: none;
+    animation: efeito 2s infinite;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário-Família</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<img id="image" src="styles/images/salario-familia.jpg" alt="informativo">
+    <div class="topico">
+        <form action="#">
+            <div class="espaco">
+                <input required placeholder="Empregado" type="text">
+            </div>
+
+            <div class="espaco">
+                <input required min="0" setep="1" max="20" placeholder="Quantidade de filhos menores 14 anos ou inválidos" type="number" id="qtdDefilhosMenores14anosOuInvalidos">
+            </div>
+
+            <div class="espaco">
+                <select id="salarioContribuicao">
+                    <option value=""> Salário Contribuição </option>
+                    <option value="ate806.80"> Até R$ 806,80</option>
+                    <option value="entre806.81e1.212.64"> Entre R$ 806,81 e R$ 1.212,64</option>
+                    <option value="mais1.212.64"> R$ 1.212,64</option>
+                </select>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Salário-Contribuição</th>
+                    <th>Conta do Salário Família</th>
+                </tr>
+                <tr>
+                    <td> Até R$ 806,80 </td>
+                    <td> R$ 41,37 por filho </td>
+                </tr>
+                <tr>
+                    <td> Entre R$ 806,81 e R$ 1.212,64 </td>
+                    <td> R$ 29,16 por filho </td>
+                </tr>
+                <tr>
+                    <td> Mais de R$ 1.212,64 </td>
+                    <td> Bão há </td>
+                </tr>
+            </table>
+            <div class="espaco">
+                <button type="submit">Calcular</button>
+            </div>
+        </form>
+
+        
+
+
+
+    </div>
+</body>
+</html>

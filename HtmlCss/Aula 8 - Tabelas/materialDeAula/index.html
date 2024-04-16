@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <!-- table = é a tag para fazer tabela -->
+    <table>
+        <!-- tr = linha da tabela (table row) -->
+        <tr>
+            <!-- th = título da tabela (table heading) -->
+            <th> - </th>
+            <th> A </th>
+            <th> B </th>
+            <th> C </th>
+        </tr>
+        <tr>
+            <th> 1 </th>
+            <!-- td (table data) = são dados da tabela é importane para o banco de
+                 dados e também back end, não é somente por estética -->
+            <td> VICTOR </td>
+            <td> LEO </td>
+            <td> BRUNO </td>
+        </tr>
+        <tr>
+            <th> 2 </th>
+            <td> ALESSANDRA </td>
+            <td> LUCAS </td>
+            <td> JIMMY </td>
+        </tr>
+    </table>
+    <hr>
+    <h3>NOTAS DE ALUNOS</h3>
+    <table>
+        <!-- estamos desmembrando a tabela -->
+        <!-- thead (table header) = Coloca-se todo o cabeçalho, os guias da tabela -->
+        <thead>
+            <tr>
+                <!-- para poder fazer um efeito trasnparente, ao invés de usar o comando abaixo
+                precisa de deixar o th somente, igual está abaixo e depois fazer o restante no css
+                - th:empty e demais especificações-->
+                <!-- <th> - </th> -->
+                <th></th>
+                <th> NOME DO ALUNO </th>
+                <th> NOTA 1 </th>
+                <th> NOTA 2 </th>
+                <th> NOTA 3 </th>
+            </tr>
+        </thead>
+        <!-- tbody (table body) = é o corpo da tabela -->
+        <tbody>
+            <tr>
+                <th> 1 </th>
+                <td> ALESSANDRA </td>
+                <td> 8 </td>
+                <td> 5 </td>
+                <td> 6 </td>
+            </tr>
+            <tr>
+                <th> 2 </th>
+                <td> BRUNO </td>
+                <td> 8 </td>
+                <td> 5 </td>
+                <td> 6 </td>
+            </tr>
+            <tr>
+                <th> 3 </th>
+                <td> JIMMY </td>
+                <td> 8 </td>
+                <td> 5 </td>
+                <td> 6 </td>
+            </tr>
+            <tr>
+                <th> 4 </th>
+                <td> LEO </td>
+                <td> 8 </td>
+                <td> 5 </td>
+                <td> 6 </td>
+            </tr>
+            <tr>
+                <th> 5 </th>
+                <td> LUCAS </td>
+                <td> 8 </td>
+                <td> 5 </td>
+                <td> 6 </td>
+            </tr>
+        </tbody>
+        <!-- tfoot (table foot) = é o rodapé da tabela -->
+        <tfoot>
+            <!-- colspan = é um expansor, expande colunas, aumentando o tamanho da coluna -->
+            <!-- rowspan = é para estender, expande linhas, aumentar a linha, porém precisa de uma outra linha embaixo para fazer -->
+            <th colspan="4" rowspan="2" > MÉDIA DA SALA </th>
+            <td> 8 </td>
+            <!-- <tr><th>teste</th></tr> -->
+
+        </tfoot>
+    </table>
+
+    <input type="text">
+
+    <div id="abreScroll"></div>
+    
+</body>
+</html>
