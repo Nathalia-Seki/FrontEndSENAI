@@ -78,14 +78,35 @@
                 <input type="radio" name="ensino" id="superiorCompleto">
                 <label for="superiorCompleto">Superior Completo</label>                
             </div>
+            <div class="espaco">
+                <h4>Experiência Profissional</h4>
+                <label for="empresa">Empresa: </label>
+                <input type="empresa">
+                <hr>
+                <label for="cargo">Cargo: </label>
+                <input type="cargo">
+                <hr>
+                <label for="atividadeExercida">Atividade Exercida: </label>
+                <hr>
+                <textarea id="feedback" cols="60" rows="10">Digite um feedback muito bacana</textarea>
+                <hr>
+                <label for="dataInicio">Data Início: </label>
+                <input required type="date" id="dataInicio">
+                <label for="dataTermino">Data Témino: </label>
+                <input required type="date" id="dataTermino">
+                <label for="atual">Atual: </label>
+                <input type="radio" name="dataTermino" id="atual">  
 
-
-
-
-
+            </div>
+            <div class="espaco">
+                <h4>Cursos Complementares</h4>
+                <label for="nomeCurso">Curso: </label>
+                <input type="nomeCurso">
+                <hr>
+                <label for="horas">Carga horária: </label>
+                <input min="0" max="600" type="number" id="horas">
+            </div>
         </form>
-    </div>
-
-    
+    </div> 
 </body>
 </html>
