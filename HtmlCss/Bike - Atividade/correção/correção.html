@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike Correcao</title>
     <link rel="stylesheet" href="correçao.css">
+    <!-- esse é a cópia de um link para animação lá do animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
@@ -31,7 +33,7 @@
 
             <!-- Dicas -->
             <div class="topicoGrupo">
-                <div class="topicoImagem" id="topicoDicas"></div>
+                <div class="animate__infinite animate__animated animate__pulse topicoImagem" id="topicoDicas"></div>
                 <h3>TÍTULO DICAS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore veritatis quaerat nemo, corporis voluptatum, sit pariatur possimus iure ea quasi expedita ad repellendus explicabo nisi alias animi saepe! Similique.</p>
                 <button type="button">VER MAIS</button>
@@ -39,7 +41,7 @@
 
             <!-- Notícias -->
             <div class="topicoGrupo">
-                <div class="topicoImagem" id="topicoNoticias"></div>
+                <div class="animate__infinite animate__animated animate__pulse topicoImagem" id="topicoNoticias"></div>
                 <h3>TÍTULO NOTÍCIAS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore veritatis quaerat nemo, corporis voluptatum, sit pariatur possimus iure ea quasi expedita ad repellendus explicabo nisi alias animi saepe! Similique.</p>
                 <button type="button">VER MAIS</button>
@@ -47,7 +49,7 @@
 
             <!-- Equipamentos -->
             <div class="topicoGrupo">
-                <div class="topicoImagem" id="topicoEquipamentos"></div>
+                <div class="animate__infinite animate__animated animate__pulse topicoImagem" id="topicoEquipamentos"></div>
                 <h3>TÍTULO DICAS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore veritatis quaerat nemo, corporis voluptatum, sit pariatur possimus iure ea quasi expedita ad repellendus explicabo nisi alias animi saepe! Similique.</p>
                 <button type="button">VER MAIS</button>
@@ -56,14 +58,113 @@
         </section>
 
         <!-- Agenda com horários -->
-        <section id="agenda" ></section>
+        <section id="agenda" >
+            <h3 class="tituloSection">AGENDA</h3>
+            <p class="subtituloSection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facere totam quaerat obcaecati error optio ipsum beatae voluptates rem fuga tempore at odit tempora impedit nobis dolorum. Enim, fugiat asperiores?</p>
+            
+            <div id="seletores">
+                <select id="seletor1">
+                    <option value=""></option>
+                </select>
+
+                <select id="seletor2">
+                    <option value=""></option>
+                </select>
+            </div>
+
+            <div id="eventos">
+                <div class="evento">
+                    <div class="dataEvento">
+                        MAR 25
+                    </div>
+
+                    <div class="descEvento">
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam adipisci ut cumque excepturi accusamus voluptas similique ullam! Nesciunt dolor repellendus magni debitis amet ipsa praesentium explicabo veniam tempore! Velit, repudiandae.</P>
+                        <button type="button">VER MAIS</button>
+                    </div>
+                </div>
+                <div class="evento">
+                    <div class="dataEvento">
+                        MAR 25
+                    </div>
+                    <div class="descEvento">
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam adipisci ut cumque excepturi accusamus voluptas similique ullam! Nesciunt dolor repellendus magni debitis amet ipsa praesentium explicabo veniam tempore! Velit, repudiandae.</P>
+                        <button type="button">VER MAIS</button>
+                    </div> 
+                </div>
+                <div class="evento">
+                    <div class="dataEvento">
+                        MAR 25
+                    </div>
+                    <div class="descEvento">
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam adipisci ut cumque excepturi accusamus voluptas similique ullam! Nesciunt dolor repellendus magni debitis amet ipsa praesentium explicabo veniam tempore! Velit, repudiandae.</P>
+                        <button type="button">VER MAIS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- seção de galeria -->
-        <section id="galeria"></section>
+        <section id="galeria">
+            <h3 class="tituloSection">GALERIA</h3>
+            <p class="subtituloSection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facere totam quaerat obcaecati error optio ipsum beatae voluptates rem fuga tempore at odit tempora impedit nobis dolorum. Enim, fugiat asperiores?</p>
+            <div id="imagemGaleria">
+                <img src="/styles/images/foto2.jpg" alt="ciclismoPista">
+                <img src="/styles/images/foto3.jpg" alt="ciclistasNaRua">
+                <img src="/styles/images/foto4.jpeg" alt="ciclistasTunel">
+                <img src="/styles/images/foto4.jpg" alt="fotogrupo">
+                <img src="/styles/images/foto5.JPG" alt="fotoGrupo2">
+                <img src="/styles/images/foto6.jpg" alt="fotoGrupo no Rancho">
+                <img src="/styles/images/foto7.jpg" alt="foto grupo na trilha">
+                <img src="/styles/images/foto8.jpg" alt="foto grupo trilha 2">
+                <img src="/styles/images/foto9.jpg" alt="foto nas montanhas do grpo">
+                <img src="/styles/images/foto10.jpg" alt="ciclistas na trilha parque">
+            </div>
+            
+        
+        </section>
+
         <!-- seção do e-mail -->
-        <section id="emailSecao"></section>
+        <section id="emailSecao">
+            <h3 class="tituloSection">NEWSLETTER</h3>
+            <p class="subtituloSection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facere totam quaerat obcaecati error optio ipsum beatae voluptates rem fuga tempore at odit tempora impedit nobis dolorum. Enim, fugiat asperiores?</p>
+        
+            <input type="email" id="email">
+            <button type="button" id="cadastrar"> CADASTRAR </button>
+        </section>
     </main>
 
-    <footer></footer>
+    <!-- Esses não fazem parte do projeto. Para fins didáticos. -->
+    <!-- <img width="600px" src="/styles/images/apps_FILL0_wght400_GRAD0_opsz24.png" alt=""> -->
+    <!-- Quando tem dentro de um projeto, imagens fixas (png, e jpeg), ela não tem pixels suficiente
+    para estender e aí perde-se a definição, ficando embaçado -->
+    
+    <!-- <img width="600px" src="/styles/images/apps_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
+    <!-- Diferentemente das imagens fixas, o svg que não é fixo, ou seja, flexível e o computador
+    recebe um código (fórmula) da imagem, assim o computador monta a imagem dinamicamente de acordo com o que for solicitado  -->
+
+
+    <footer>
+        <div class="redes">
+            <div class="redesIcone">
+                <img src="/styles/images/twitter02_active.png" alt="logoTwitter">
+            </div>
+            <p>@Bikes</p>
+        </div>
+        <div class="redes">
+            <div class="redesIcone">
+                <img src="/styles/images/skype.png" alt="logoSkype">
+            </div>
+            <p>@BikesBsb</p>
+        </div>
+        <div class="redes">
+            <div class="redesIcone">
+                <img src="/styles/images/facebook.png" alt="logoFacebook">
+            </div>
+            <!-- para mudar o icon para um ícone clicável e direcionar para outro local -->
+            <a href="#">@BikesDF</a>
+        </div>
+    </footer>
 
     
 </body>
