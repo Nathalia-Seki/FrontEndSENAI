@@ -1,0 +1,48 @@
+header{
+    justify-content: center;
+}
+
+#menuPc{
+    /* usa aqui o none para que quando o menu mobile aparecer, então esse não apareça */
+    display: none;
+}
+
+#menuMobile{
+    /* disppley flex = porque quando o menu pc desaparecer, então precisa do comando para que o menu mobile apareça. Depois mundou para none para poder aparecer somente quando der o comando */
+    display: none;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnMobile{
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+li{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+li:hover{
+    border-radius: 10px;
+    background-color: rgb(165, 163, 163, 0.648);
+    cursor: pointer;
+    transition: 0.5s;
+
+}

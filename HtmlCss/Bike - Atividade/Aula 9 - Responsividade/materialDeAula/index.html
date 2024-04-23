@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+   
+    <!-- mas para usar dessa forma precisa dizer quando ele será usado, porque senão irá trasncrever os comandos anteriores do outro css -->
+    <link rel="stylesheet" media="screen and (max-width: 860px)" href="styles/mobile.css">
+    
+    <!-- media = print - que será a versão impressa do site, irá aparecer quando for imprimir, daí ficará visível o comando, no exemplo teste mudou a cor das letras, desapareeu o header e footer -->
+    <link rel="stylesheet" media="print" href="styles/teste.css">
+    
+    <!-- screen and (orientation : porttrait) = equivale ao celular em modo retrato (em pé) e screen and (orientation : porttrait) = equivale ao celular em modo paisagem (deitado), ou seja, irá fazer uma função quando estiver em um desses dois modos, muito usado pelo youtube e vai depender muito do objetivo, porque é algo muito específico-->
+    <link rel="stylesheet" media="screen and (orientation : landscape)" href="styles/teste.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- btn = significa button -->
+            <!-- onclik - significa ao clicar ou quando clicar -->
+            <button id="btnMobile" onclick="btnMobileTrocar()" type="button">
+                <img src="image/menuIcon.svg" alt="menu icon">
+            </button>
+
+            <ul id="menuMobile">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+
+            <ul id="menuPc">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- A função do piscture é trocar a imagem para ser usada em outras telas, então usa-se a estrutura do comanda com a media, qu em determinado tamanho de tela irá trocar a imagem para uma qu em tela menor (tipo mobile) possa ser melhor vizualizada.-->
+        <picture>
+            <source media="screen and (max-width: 860px) " srcset="image/mulherdancandoMenor.jpg">
+            <img src="image/mulherdancando.jpg" alt="Uma mulher dançando">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, eveniet cumque? Repudiandae fugit natus ullam nemo perspiciatis eveniet? Cupiditate eum molestias tempora quos ad nemo quibusdam, sint dignissimos minima libero.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis rem unde non deserunt sed natus mollitia quod repellendus ea enim nulla adipisci nisi voluptatum modi quos reprehenderit vel, molestias ab.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error recusandae aliquam et voluptatem eligendi fuga autem perferendis in, ullam nemo praesentium blanditiis, perspiciatis nesciunt id eaque, nulla commodi molestiae suscipit!</p>
+    </main>
+
+    <footer>
+        Todos os direitos reservados!
+    </footer>
+
+    <script>
+        // procedimento palavra () --> procedimento = function
+        // fimProcedimento
+
+        function btnMobileTrocar () {
+            // inf = se - da lógica de programação - se .. então e fimSe
+            if(menuMobile.style.display == "flex"){
+                menuMobile.style.display = "none";
+            }else{
+                menuMobile.style.display = "flex";
+            }
+        }
+    </script>
+    
+</body>
+</html>
