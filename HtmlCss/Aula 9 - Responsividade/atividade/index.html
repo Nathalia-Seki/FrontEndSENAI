@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtMuseum</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1030px)" href="styles/mobile.css">
 </head>
 <body>
     <header>
         <h1>ArtMuseum</h1>
         <nav>
-            <ul>
+            <!--Para mobile -->
+
+            <button id="btnMobile" onclick="btnMobileTrocar()" type="button">
+                <img src="/HtmlCss/Aula 9 - Responsividade/materialDeAula/image/menuIcon.svg" alt="menu icon">
+            </button>
+
+            <ul id="menuMobile">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <ul id="menuPc">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Galeria</a></li>
                 <li><a href="#">Contato</a></li>
@@ -25,7 +38,11 @@
             <div id="destaqueSemana">
                 <div>
                     <h4>Elizabeth</h4>
-                    <img id="imgElizabeth" src="images/elizabeth.jpg" alt="Foto da Elizabeth">
+                    <picture>
+                        <source srcset="images/elizabethMenor.png" media="(max-width: 1030px)">
+                        <source srcset="images/elizabeth.jpg">
+                        <img id="imgElizabeth" src="images/elizabeth.jpg" alt="Foto da Elizabeth">
+                    </picture>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ipsam! Dignissimos minus officiis sapiente sunt commodi magnam vero veniam libero, veritatis recusandae est atque alias dolores blanditiis accusantium consequuntur officia!</p>
                     <button type="button">Ver sobre</button>
                 </div>

@@ -1,0 +1,69 @@
+#menuPc{
+    display: none;
+}
+
+#menuMobile{
+    display: none;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnMobile{
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+li{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+li:hover{
+    border-radius: 10px;
+    background-color: rgb(165, 163, 163, 0.648);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+#artes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.artesGrupo{
+    width: 30%;
+    padding: 10px 0px;
+    display: flex;
+    gap: 20px;
+    border: 1px solid #727171;
+    border-radius: 8px;
+}
+
+.tituloArte{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 8px;
+}
+.imgArtes{
+    width: 400px;
+    height: auto;
+}

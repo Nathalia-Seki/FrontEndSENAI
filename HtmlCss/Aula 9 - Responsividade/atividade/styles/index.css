@@ -11,13 +11,22 @@ header{
     color: white;
     display: flex;
     justify-content: left;
-    gap: 300px;
+    gap: 400px;
 }
+
 
 a{
     text-decoration: none;
     color: white;
     display: flex;
+}
+
+#btnMobile{
+    display: none;
+}
+
+#menuMobile{
+    display: none;
 }
 
 ul{
@@ -125,4 +134,9 @@ footer{
     justify-content: center;
 }
 
-
+@media screen and (max-width : 1030px){
+    main{
+        width: 50%;
+    }
+    
+}
