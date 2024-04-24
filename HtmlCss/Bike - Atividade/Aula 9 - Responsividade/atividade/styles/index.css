@@ -27,12 +27,102 @@ ul{
     margin: 20px;
 }
 
-section{
-    width: 100%;
-    padding: 10px 0px;
-    display: flex;
+main{
+    margin: 30px 200px;
+    
 }
+
+#topicos{
+    gap: 20px;
+    justify-content: center;
+}
+
+#destaqueSemana{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #c7c7c7;  
+    border-radius: 10px;
+}
+
+section h3{
+    text-align: center;
+    border-bottom: 2px solid red;
+    margin: 35px 20px;
+    padding: 5px;  
+}
+
+section p{
+    color: #727171;
+}
+
+section h5{
+    padding: 15px;
+    text-align: center;
+}
+
 .tituloSection{
     text-align: center;
     font-weight: bold;
 }
+
+#imgElizabeth{
+    width: 600px;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 15px;    
+}
+
+button{
+    color: white;
+    background-color:deeppink;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+#artes{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    
+}
+
+.artesGrupo{
+    width: 30%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center ;
+    gap: 20px;
+    border: 1px solid #727171;
+    border-radius: 8px;
+}
+
+.tituloArte{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 8px;
+}
+.imgArtes{
+    width: 150px;
+    height: auto;
+}
+
+footer{
+    width: 100%;
+    padding: 30px;
+    background-color: #2A2B2A;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
