@@ -49,7 +49,7 @@ li:hover{
 }
 
 .artesGrupo{
-    width: 30%;
+    width: 90%;
     padding: 10px 0px;
     display: flex;
     gap: 20px;
@@ -64,6 +64,10 @@ li:hover{
     padding: 0px 8px;
 }
 .imgArtes{
-    width: 400px;
+    width: 90%;
     height: auto;
+}
+
+#imgElizabeth{
+    width: 80%;
 }
