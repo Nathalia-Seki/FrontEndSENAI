@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/resolucao.css">
+    <link rel="stylesheet" media="screen and (max-width : 680px)" href="styles/@media.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h3>ArtMuseum</h3>
+        <nav id="menuPc">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="btnMobile" onclick="alternarMenu()">
+            -
+        </button>
+    </header>
+    <nav id="menuMobile">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="artigo">
+            <h3>DESTAQUES DA SEMANA</h3>
+            <hr>
+            <section id="elizabeth">
+                <picture>
+                    <source media="screen and (max-width : 680px)" srcset="../images/elizabethMenor.png">
+                    <img src="../images/elizabeth.jpg" alt="">
+                </picture>
+
+                <h3>Elizabeth</h3>
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, aut. Cumque aut voluptatibus laborum? Ipsam harum unde, architecto dolorem molestias voluptates quaerat quis nobis voluptate blanditiis, animi recusandae iure quas.</p>
+                <button type="button">VER SOBRE</button>
+            </section>
+        </section>
+        
+
+
+        <section id="catalogo">
+            <h3>ARTES</h3>
+            <hr>
+            <div id="catalogoItens">
+                <div class="item">
+                    <h4>TITULO DA ARTE</h4>
+                    <img src="styles/images/arte1.jpg" alt="">
+                    <p>Descrição Arte</p>
+                    <button type="button">VER SOBRE</button>
+                </div>
+                <div class="item">
+                    <h4>TITULO DA ARTE</h4>
+                    <img src="styles/images/arte2.jpg" alt="">
+                    <p>Descrição Arte</p>
+                    <button type="button">VER SOBRE</button>
+                </div>
+                <div class="item">
+                    <h4>TITULO DA ARTE</h4>
+                    <img src="styles/images/arte3.jpg" alt="">
+                    <p>Descrição Arte</p>
+                    <button type="button">VER SOBRE</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        TODOS DIREITOS RESERVADOS 2024
+    </footer>
+    
+    <script>
+        function alternarMenu(){
+            // alert() - coloca-se, mas depois tira, isso é só para ver se o butão está funcionando.
+            if(menuMobile.style.display == "none"){
+            // se menuMobile em style o display estiver fechado (none)
+            menuMobile.style.display = "flex";
+            }else{
+                menuMobile.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>
