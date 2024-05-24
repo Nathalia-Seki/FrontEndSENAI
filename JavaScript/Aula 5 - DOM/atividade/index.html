@@ -12,11 +12,11 @@
     <div class="topico">
         <form action="#">
             <div class="espaco">
-                <input id="empregado" required placeholder="Empregado" type="text">
+                <input id="empregado" required placeholder="Nome empregado" type="text">
             </div>
 
             <div class="espaco">
-                <input required min="0" setep="1" max="20" placeholder="Quantidade de filhos menores 14 anos ou inválidos" type="number" id="qtdDefilhosMenores14anosOuInvalidos">
+                <input required min="0" setep="1" max="20" required placeholder="Quantidade filhos" type="number" id="qtdDefilhosMenores14anosOuInvalidos">
             </div>
 
             <div class="espaco">
@@ -47,7 +47,7 @@
                 </tr>
             </table>
             <div class="espaco">
-                <button type="submit">Calcular</button>
+                <button id="calcularSalarioFamilia" type="button">Calcular</button>
             </div>
         </form>
 

@@ -21,6 +21,10 @@ body{
     
 }
 
+#qtdDefilhosMenores14anosOuInvalidos{
+    padding: 0px 75px;
+}
+
 table{
     border-collapse: collapse;
 }
@@ -29,4 +33,5 @@ th, td{
     border: 1px solid black;
     padding: 8px; 
 }
+
 

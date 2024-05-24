@@ -10,7 +10,7 @@ var senha = ''
 var btnLogar = document.querySelector("#logarUsuario");
 
 //adicionando um evento - ao click então vai fazer login
-// somente no addEventListener = adiciona um eveno, qual a função s ser executada. 
+// somente no addEventListener = adiciona um evento, qual a função a ser executada. 
 // Obs: a única funão que não precisa de parêntese na hora de chamar a function, a estrutura será:
 btnLogar.addEventListener('click',fazerLogin);
 
