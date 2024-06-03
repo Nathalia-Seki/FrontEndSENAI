@@ -28,4 +28,26 @@ function verificacao(){
         }
     })
 }
+
+// EXERCÍCIO 3 
+// Input de pesquisa para buscar um elemento dentro do array, caso exsista, então imprima na tela a mensagem que foi encontrado e caso contrário, imprimir na tela que o elemento não existe na linguagem.
+// INPUT: elemento
+// OUTPUT: Mensagem de verificação
+
+corpo.innerHTML +=
+<input id="pesquisa" placeholder="Digite um termo a ser pesquisado" onfocusout="pesquisaEx()" type="text"></input>
+
+function pesquisaEx(){
+    let listaElementos = ["God Of War","Computador","Vingadores"]
+
+    let pesquisa = document.querySelector("#pesquisa").value 
+
+    let Achou = listaElementos.includes(pesquisa)
+
+    if(Achou == true){
+        alert("Elemento encontrado")
+    }else{
+        alert("Elemento não encontrado!")
+    }
+}
     
